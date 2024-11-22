@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomy Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="quizes.css">
+    <link rel="stylesheet" href="footer.css">
+  <script>
+    function flipCard(cardId) {
+    const card = document.getElementById(cardId);
+    const question = card.querySelector('.quiz-question');
+    const answer = card.querySelector('.quiz-answer');
+
+    if (question.style.display === 'none') {
+        question.style.display = 'block';
+        answer.style.display = 'none';
+    } else {
+        question.style.display = 'none';
+        answer.style.display = 'block';
+    }
+}
+
+  </script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <a id="logo1" href="Index.html"><img  src="anatomylogo1.png" alt="logo" width="100px" height="100px"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="anatomicalTimelines.html">Timeline</a></li>
+                    <li><a href="Resources.html">Resources</a></li>
+                    <li><a href="quizzes.html">Quizzes</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <section>
+        <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 25px; color: whitesmoke; ">Test Your Knowledge</h2>
+        <div class="container">
+            <div class="quiz-card" id="q1">
+                <div class="quiz-question">
+                    <p>1. What is the largest organ in the human body?</p>
+                    <input type="radio" id="q1a" name="q1" value="A">
+                    <label for="q1a">A. Liver</label><br>
+                    <input type="radio" id="q1b" name="q1" value="B">
+                    <label for="q1b">B. Skin</label><br>
+                    <input type="radio" id="q1c" name="q1" value="C">
+                    <label for="q1c">C. Heart</label><br>
+                    <input type="radio" id="q1d" name="q1" value="D">
+                    <label for="q1d">D. Lungs</label><br>
+                    <button onclick="flipCard('q1')">Show Answer</button>
+                </div>
+                <div class="quiz-answer">
+                    <p>Correct Answer: B. Skin</p>
+                    <button onclick="flipCard('q1')">Back to Question</button>
+                </div>
+            </div>
+        
+            <div class="quiz-card" id="q2">
+                <div class="quiz-question">
+                    <p>2. How many bones are there in the adult human body?</p>
+                    <input type="radio" id="q2a" name="q2" value="A">
+                    <label for="q2a">A. 206</label><br>
+                    <input type="radio" id="q2b" name="q2" value="B">
+                    <label for="q2b">B. 208</label><br>
+                    <input type="radio" id="q2c" name="q2" value="C">
+                    <label for="q2c">C. 210</label><br>
+                    <input type="radio" id="q2d" name="q2" value="D">
+                    <label for="q2d">D. 212</label><br>
+                    <button onclick="flipCard('q2')">Show Answer</button>
+                </div>
+                <div class="quiz-answer">
+                    <p>Correct Answer: A. 206</p>
+                    <button onclick="flipCard('q2')">Back to Question</button>
+                </div>
+            </div>
+      
+        
+    <!-- Question 3 -->
+    <div class="quiz-card" id="q3">
+        <div class="quiz-question">
+            <p>3. What is the primary function of the rib cage?</p>
+            <input type="radio" id="q3a" name="q3" value="A">
+            <label for="q3a">A. Protect the heart and lungs</label><br>
+            <input type="radio" id="q3b" name="q3" value="B">
+            <label for="q3b">B. Support the spine</label><br>
+            <input type="radio" id="q3c" name="q3" value="C">
+            <label for="q3c">C. Aid in digestion</label><br>
+            <input type="radio" id="q3d" name="q3" value="D">
+            <label for="q3d">D. Facilitate movement</label><br>
+            <button onclick="flipCard('q3')">Show Answer</button>
+        </div>
+        <div class="quiz-answer">
+            <p>Correct Answer: A. Protect the heart and lungs</p>
+            <button onclick="flipCard('q3')">Back to Question</button>
+        </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="quiz-card" id="q4">
+        <div class="quiz-question">
+            <p>4. What type of joint is the knee joint?</p>
+            <input type="radio" id="q4a" name="q4" value="A">
+            <label for="q4a">A. Hinge joint</label><br>
+            <input type="radio" id="q4b" name="q4" value="B">
+            <label for="q4b">B. Ball and socket joint</label><br>
+            <input type="radio" id="q4c" name="q4" value="C">
+            <label for="q4c">C. Pivot joint</label><br>
+            <input type="radio" id="q4d" name="q4" value="D">
+            <label for="q4d">D. Saddle joint</label><br>
+            <button onclick="flipCard('q4')">Show Answer</button>
+        </div>
+        <div class="quiz-answer">
+            <p>Correct Answer: A. Hinge joint</p>
+            <button onclick="flipCard('q4')">Back to Question</button>
+        </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="quiz-card" id="q5">
+        <div class="quiz-question">
+            <p>5. Which muscle is primarily responsible for breathing?</p>
+            <input type="radio" id="q5a" name="q5" value="A">
+            <label for="q5a">A. Diaphragm</label><br>
+            <input type="radio" id="q5b" name="q5" value="B">
+            <label for="q5b">B. Biceps</label><br>
+            <input type="radio" id="q5c" name="q5" value="C">
+            <label for="q5c">C. Triceps</label><br>
+            <input type="radio" id="q5d" name="q5" value="D">
+            <label for="q5d">D. Abdominals</label><br>
+            <button onclick="flipCard('q5')">Show Answer</button>
+        </div>
+        <div class="quiz-answer">
+            <p>Correct Answer: A. Diaphragm</p>
+            <button onclick="flipCard('q5')">Back to Question</button>
+        </div>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="quiz-card" id="q6">
+        <div class="quiz-question">
+            <p>6. What part of the brain is responsible for regulating heart rate and breathing?</p>
+            <input type="radio" id="q6a" name="q6" value="A">
+            <label for="q6a">A. Medulla oblongata</label><br>
+            <input type="radio" id="q6b" name="q6" value="B">
+            <label for="q6b">B. Cerebellum</label><br>
+            <input type="radio" id="q6c" name="q6" value="C">
+            <label for="q6c">C. Hippocampus</label><br>
+            <input type="radio" id="q6d" name="q6" value="D">
+            <label for="q6d">D. Thalamus</label><br>
+            <button onclick="flipCard('q6')">Show Answer</button>
+        </div>
+        <div class="quiz-answer">
+            <p>Correct Answer: A. Medulla oblongata</p>
+            <button onclick="flipCard('q6')">Back to Question</button>
+        </div>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="quiz-card" id="q7">
+        <div class="quiz-question">
+            <p>7. Which blood vessels carry blood away from the heart?</p>
+            <input type="radio" id="q7a" name="q7" value="A">
+            <label for="q7a">A. Arteries</label><br>
+            <input type="radio" id="q7b" name="q7" value="B">
+            <label for="q7b">B. Veins</label><br>
+            <input type="radio" id="q7c" name="q7" value="C">
+            <label for="q7c">C. Capillaries</label><br>
+            <input type="radio" id="q7d" name="q7" value="D">
+            <label for="q7d">D. Venules</label><br>
+            <button onclick="flipCard('q7')">Show Answer</button>
+        </div>
+        <div class="quiz-answer">
+            <p>Correct Answer: A. Arteries</p>
+            <button onclick="flipCard('q7')">Back to Question</button>
+        </div>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="quiz-card" id="q8">
+        <div class="quiz-question">
+            <p>8. What is the function of the small intestine?</p>
+            <input type="radio" id="q8a" name="q8" value="A">
+            <label for="q8a">A. Digestion and nutrient absorption</label><br>
+            <input type="radio" id="q8b" name="q8" value="B">
+            <label for="q8b">B. Waste elimination</label><br>
+            <input type="radio" id="q8c" name="q8" value="C">
+            <label for="q8c">C. Blood filtration</label><br>
+            <input type="radio" id="q8d" name="q8" value="D">
+            <label for="q8d">D. Hormone production</label><br>
+            <button onclick="flipCard('q8')">Show Answer</button>
+        </div>
+        <div class="quiz-answer">
+            <p>Correct Answer: A. Digestion and nutrient absorption</p>
+            <button onclick="flipCard('q8')">Back to Question</button>
+        </div>
+    </div>
+
+    <!-- Question 9 -->
+    <div class="quiz-card" id="q9">
+        <div class="quiz-question">
+            <p>9. What is the primary role of the kidneys?</p>
+            <input type="radio" id="q9a" name="q9" value="A">
+            <label for="q9a">A. Filtration of blood</label><br>
+            <input type="radio" id="q9b" name="q9" value="B">
+            <label for="q9b">B. Oxygenating blood</label><br>
+            <input type="radio" id="q9c" name="q9" value="C">
+            <label for="q9c">C. Digestion of proteins</label><br>
+            <input type="radio" id="q9d" name="q9" value="D">
+            <label for="q9d">D. Regulating blood sugar</label><br>
+            <button onclick="flipCard('q9')">Show Answer</button>
+        </div>
+        <div class="quiz-answer">
+            <p>Correct Answer: A. Filtration of blood</p>
+            <button onclick="flipCard('q9')">Back to Question</button>
+        </div>
+    </div>
+
+    <!-- Question 10 -->
+    <div class="quiz-card" id="q10">
+        <div class="quiz-question">
+            <p>10. Which organ is responsible for detoxification in the body?</p>
+            <input type="radio" id="q10a" name="q10" value="A">
+            <label for="q10a">A. Liver</label><br>
+            <input type="radio" id="q10b" name="q10" value="B">
+            <label for="q10b">B. Pancreas</label><br>
+            <input type="radio" id="q10c" name="q10" value="C">
+            <label for="q10c">C. Spleen</label><br>
+            <input type="radio" id="q10d" name="q10" value="D">
+            <label for="q10d">D. Stomach</label><br>
+            <button onclick="flipCard('q10')">Show Answer</button>
+        </div>
+        <div class="quiz-answer">
+            <p>Correct Answer: A. Liver</p>
+            <button onclick="flipCard('q10')">Back to Question</button>
+        </div>
+    </div>
+     <!-- Question 11 -->
+     <div class="quiz-card" id="q11">
+        <div class="quiz-question">
+            <p>11. Which part of the body is primarily responsible for balance?</p>
+            <input type="radio" id="q11a" name="q11" value="A">
+            <label for="q11a">A. Inner ear</label><br>
+            <input type="radio" id="q11b" name="q11" value="B">
+            <label for="q11b">B. Cerebellum</label><br>
+            <input type="radio" id="q11c" name="q11" value="C">
+            <label for="q11c">C. Brainstem</label><br>
+            <input type="radio" id="q11d" name="q11" value="D">
+            <label for="q11d">D. Spinal cord</label><br>
+            <button onclick="flipCard('q11')">Show Answer</button>
+        </div>
+        <div class="quiz-answer">
+            <p>Correct Answer: A. Inner ear</p>
+            <button onclick="flipCard('q11')">Back to Question</button>
+        </div>
+    </div>
+
+    <!-- Question 12 -->
+    <div class="quiz-card" id="q12">
+        <div class="quiz-question">
+            <p>12. What is the main function of red blood cells?</p>
+            <input type="radio" id="q12a" name="q12" value="A">
+            <label for="q12a">A. Transport oxygen</label><br>
+            <input type="radio" id="q12b" name="q12" value="B">
+            <label for="q12b">B. Fight infection</label><br>
+            <input type="radio" id="q12c" name="q12" value="C">
+            <label for="q12c">C. Clot blood</label><br>
+            <input type="radio" id="q12d" name="q12" value="D">
+            <label for="q12d">D. Remove waste</label><br>
+            <button onclick="flipCard('q12')">Show Answer</button>
+        </div>
+        <div class="quiz-answer">
+            <p>Correct Answer: A. Transport oxygen</p>
+            <button onclick="flipCard('q12')">Back to Question</button>
+        </div>
+    </div>
+
+    <!-- Question 13 -->
+    <div class="quiz-card" id="q13">
+        <div class="quiz-question">
+            <p>13. Which vitamin is essential for calcium absorption in the body?</p>
+            <input type="radio" id="q13a" name="q13" value="A">
+            <label for="q13a">A. Vitamin A</label><br>
+            <input type="radio" id="q13b" name="q13" value="B">
+            <label for="q13b">B. Vitamin C</label><br>
+            <input type="radio" id="q13c" name="q13" value="C">
+            <label for="q13c">C. Vitamin D</label><br>
+            <input type="radio" id="q13d" name="q13" value="D">
+            <label for="q13d">D. Vitamin K</label><br>
+            <button onclick="flipCard('q13')">Show Answer</button>
+        </div>
+        <div class="quiz-answer">
+            <p>Correct Answer: C. Vitamin D</p>
+            <button onclick="flipCard('q13')">Back to Question</button>
+        </div>
+    </div>
+
+    <!-- Question 14 -->
+    <div class="quiz-card" id="q14">
+        <div class="quiz-question">
+            <p>14. What is the largest organ in the human body?</p>
+            <input type="radio" id="q14a" name="q14" value="A">
+            <label for="q14a">A. Skin</label><br>
+            <input type="radio" id="q14b" name="q14" value="B">
+            <label for="q14b">B. Liver</label><br>
+            <input type="radio" id="q14c" name="q14" value="C">
+            <label for="q14c">C. Heart</label><br>
+            <input type="radio" id="q14d" name="q14" value="D">
+            <label for="q14d">D. Lungs</label><br>
+            <button onclick="flipCard('q14')">Show Answer</button>
+        </div>
+        <div class="quiz-answer">
+            <p>Correct Answer: A. Skin</p>
+            <button onclick="flipCard('q14')">Back to Question</button>
+        </div>
+    </div>
+
+    <!-- Question 15 -->
+    <div class="quiz-card" id="q15">
+        <div class="quiz-question">
+            <p>15. What is the main role of the immune system?</p>
+            <input type="radio" id="q15a" name="q15" value="A">
+            <label for="q15a">A. Protect against pathogens</label><br>
+            <input type="radio" id="q15b" name="q15" value="B">
+            <label for="q15b">B. Produce hormones</label><br>
+            <input type="radio" id="q15c" name="q15" value="C">
+            <label for="q15c">C. Control body temperature</label><br>
+            <input type="radio" id="q15d" name="q15" value="D">
+            <label for="q15d">D. Store energy</label><br>
+            <button onclick="flipCard('q15')">Show Answer</button>
+        </div>
+        <div class="quiz-answer">
+            <p>Correct Answer: A. Protect against pathogens</p>
+            <button onclick="flipCard('q15')">Back to Question</button>
+        </div>
+    </div>
+          
+        </div>
+    </section>
+    
+    </div>
+   <!-- Footer Section -->
+   <footer class="footer">
+    <div class="footer-container">
+      <!-- About Section -->
+      <div class="footer-section about-section">
+        <h3>About</h3>
+        <p>
+          Anatomical Milestones is a project dedicated to chronicling the history of anatomy and medical science, from ancient civilizations to modern-day innovations. Our mission is to provide a comprehensive and interactive educational resource for students, professionals, and enthusiasts alike.
+        </p>
+      </div>
+  
+      <div class="separator"></div>
+  
+      <!-- Quick Links -->
+      <div class="footer-section quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="About.html#contact">Contact Us</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/terms-of-service">Terms of Service</a></li>
+          <li><a href="/faq">FAQ</a></li>
+        </ul>
+      </div>
+  
+      <div class="separator"></div>
+  
+      <!-- Latest News -->
+      <div class="footer-section latest-news">
+        <h3>Latest Updates</h3>
+        <ul>
+          <li><a href="#">New Article: "Anatomy in the 21st Century"</a></li>
+          <li><a href="#">Virtual Reality in Medical Education - Free Webinar</a></li>
+          <li><a href="#">Explore Our New 3D Anatomy Model Feature</a></li>
+        </ul>
+      </div>
+  
+      <div class="separator"></div>
+  
+      <!-- Newsletter Signup -->
+      <div class="footer-section newsletter-signup">
+        <h3>Stay Updated</h3>
+        <p>Subscribe to our newsletter to receive the latest news, research, and developments in anatomy and medical science.</p>
+        <form action="#" method="post">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+  
+      <div class="separator"></div>
+  
+      <!-- Contact Info -->
+      <div class="footer-section contact-info">
+        <h3>Contact Us</h3>
+        <p>Email: contact@anatomicalmilestones.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Location: 123 Medical History Ave, Health City</p>
+      </div>
+  
+      <div class="separator"></div>
+  
+      <!-- Operating Hours -->
+      <div class="footer-section operating-hours">
+        <h3>Operating Hours</h3>
+        <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+        <p>Saturday: 10:00 AM - 2:00 PM</p>
+        <p>Sunday: Closed</p>
+      </div>
+    </div>
+  
+    <!-- Social Media & Author Info -->
+    <div class="social-icons">
+      <a href="https://youtu.be/uBGl2BujkPQ?t=5"><img src="youtube.png" alt="YouTube Icon"></a>
+      <a href="https://www.instagram.com/?hl=en"><img src="instagram.png" alt="Instagram Icon"></a>
+      <a href="https://www.tiktok.com/?lang=en"><img src="tiktok.png" alt="TikTok Icon"></a>
+      <a href="https://www.whatsapp.com/"><img src="whatsapp.png" alt="WhatsApp Icon"></a>
+    </div>
+  
+    <p class="author-info">Author: House Stark - housestark@gmail.com , 085559985</p>
+    <p>&copy; 2024 Anatomical Milestones. All rights reserved.</p>
+  </footer>
+</body>
+</html>

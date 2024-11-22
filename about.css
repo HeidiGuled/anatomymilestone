@@ -1,0 +1,50 @@
+@keyframes slideIn {
+    from {
+        transform: translateX(100%); /* Start off-screen (to the right) */
+        opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+        transform: translateX(0); /* End at its original position */
+        opacity: 1; /* End with opacity 1 */
+    }
+}
+.abt p{
+    color: white;
+}
+.abt img {
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+    animation: slideIn 0.5s ease-out; /* 0.5s duration and ease-out timing function */
+    display: block;
+    
+}
+.abt {
+    display: flex;
+    flex-wrap: wrap; /* Wrap if screen is too small */
+    justify-content: center; /* Center members horizontally */
+    align-items: center; /* Align members vertically in the middle */
+    gap: 20px; /* Space between members */
+    padding: 20px;
+}
+.abt h3{
+    font-size: 35px;
+    color:#333333;
+    animation: slideIn 2s ease-out; 
+}
+.abouth h2{
+    color:#333333;
+}
+.foot101{
+    position:static;
+    left: 0;bottom: 0;
+    width: 100%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+} 
+@media (max-width: 768px) {
+    .abt img {
+        max-width: 100%; /* Ensure it scales down for small screens */
+    }
+}

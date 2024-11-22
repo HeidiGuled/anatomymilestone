@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup - Anatomy Journey</title>
+    <meta  name="viewport" content="device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="header.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+ <header>
+    <a href="Index.html"><img  src="anatomylogo1.png" alt="logo" width="100px" height="100px"></a>
+    <h2>New Here?</h2>
+    <p>Join our community and unlock additional features! </p>
+    
+    <h2>Need Help?</h2>
+    <p>If you experience any issues logging in, please contact our support team at <a href="mailto:support@example.com">support@example.com</a>.</p>
+ </header>
+ 
+    <section class="logwrap">
+    
+    <form action = "signUp.php" method="post">
+        <h2>Signup</h2>
+        <div class="inputbox">
+            <input type="text" placeholder="name" required name = "name" >
+            <i class='bx bxs-user'></i>
+        </div>
+        <div class="inputbox">
+            <input type="text" placeholder="surnname" required name = "surnname" >
+            <i class='bx bxs-user'></i>
+        </div>
+        <div class="inputbox">
+            <input type="email" placeholder="Email" required  name = "email">
+            <i class='bx bxs-user'></i>
+        </div>
+        <div class="inputbox">
+            <input type="password" placeholder="password" name = "password" required>
+            <i class='bx bxs-lock-alt'></i>
+            <br>
+        </div>
+
+        <div class="remember">
+            <label><input type="checkbox">Remember me</label><br><br>
+            <a href="#">Forgot password</a>
+        </div>
+           <button type="submit" class="btn">Register</button>
+        </div>
+        <div class="register">
+            <p>Already have an account? <a href="login.html">login</a></p>
+        </div>
+        </form>
+    </section>
+    
+    <!-- Signup Section -->
+    
+
+</body>
+</html>

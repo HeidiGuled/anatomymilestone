@@ -1,0 +1,88 @@
+
+
+header {
+    background-color: #222;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+header div #logo1{
+    margin-bottom: -20px;
+}
+nav ul {
+    list-style-type: none;
+    margin-right: 40px;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: gray;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 800px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+    display: flex; /* Use flexbox for card layout */
+    flex-direction: column; /* Stack cards vertically */
+    gap: 20px; /* Space between cards */
+  
+}
+
+.quiz-card {
+    background-color: #444; /* Darker background for quiz cards */
+    color: whitesmoke; /* Light text color */
+    padding: 30px; /* Add padding for cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+    font-size: 22px; /* Increase font size for questions */
+    line-height: 1.4; /* Increase line height for readability */
+    position: relative; /* Positioning for button */
+    height: 300px; /* Fixed height for cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation for transform and shadow */
+}
+
+.quiz-card:hover {
+    transform: translateY(-5px); /* Move the card up on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6); /* Increase shadow on hover */
+}
+
+.quiz-question {
+    display: block; /* Block display for questions */
+}
+
+.quiz-answer {
+    display: none; /* Hide answer by default */
+}
+
+button {
+    margin-top: 15px; /* Space above buttons */
+    padding: 10px 15px; /* Button padding */
+    background-color: #555; /* Darker background for buttons */
+    color: whitesmoke; /* Light text color for buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor for buttons */
+    font-size: 18px; /* Button font size */
+}
+
+button:hover {
+    background-color: #666; /* Change button background on hover */
+}

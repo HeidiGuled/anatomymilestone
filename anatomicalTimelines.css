@@ -1,0 +1,137 @@
+/* anatomicalTimelines.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: whitesmoke;
+  overflow-x: hidden;
+  background-color: #333;
+}
+
+header {
+  background-color: #222;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  background-color: gray;
+}
+
+/* Timeline Section Styles */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline div {
+  margin: 10px 0;
+}
+
+.timeline h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: whitesmoke;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 10px;
+}
+.backtoT h1 a{
+ color: whitesmoke;
+ text-decoration: none;
+}
+.backtoT h1 a:hover{
+  color: gray;
+  text-decoration: none;
+ }
+/* Container Styles */
+.container {
+  padding: 20px;
+  position: relative;
+  background-color: #f9f9f9;
+  width: 45%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Container */
+.container.left {
+  left: 0;
+  float: left;
+  border-left: 6px solid #6cb2eb;
+  margin-right: 55%;
+}
+
+/* Right Container */
+.container.right {
+  right: 0;
+  float: right;
+  border-right: 6px solid #6cb2eb;
+  margin-left: 55%;
+}
+
+/* Clearfix */
+.timeline::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* General Timeline Text and Image */
+.timeline h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.timeline p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.timeline img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Hover Effect */
+.container:hover {
+  background-color: #e6f7ff;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .container.left,
+  .container.right {
+    float: none;
+    border-left: 6px solid #6cb2eb;
+    border-right: none;
+  }
+}
